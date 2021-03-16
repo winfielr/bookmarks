@@ -1,11 +1,61 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="welcome.htm">Home</a>
+  <a href="reading.htm">Reading Next</a>
+  <a href="lastmonth.htm">Recent</a>
+  <a href="bookmark2007.htm">This Year</a>
+  <a href="bookmark2005and6.htm">Previous Years</a>
+  <a href="Quiz.htm">Quiz</a>
+  <a href="Contact.htm">Contact</a>
+</div>
+
+<div class="main">
 <html>
 <head>
 <title>Untitled Document</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 </head>
 
-<body background="library.jpg">
+<body background="media/library.jpg">
 <table width="100%" border="1" cellpadding="1">
   <tr>
     <td width="33%"><strong><em>Book &amp; Author</em></strong></td>
@@ -130,5 +180,11 @@
     <td>&nbsp;</td>
   </tr>
 </table>
+<a href="welcome.htm">
+  <img src="media/home.jpg" alt="home"
+  width="40" height="40"></a>
+  <form>
+ <input type="button" value="Go back!" onclick="history.back()">
+</form>
 </body>
 </html>

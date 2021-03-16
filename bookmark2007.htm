@@ -1,5 +1,54 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="welcome.htm">Home</a>
+  <a href="reading.htm">Reading Next</a>
+  <a href="lastmonth.htm">Recent</a>
+  <a href="bookmark2007.htm">This Year</a>
+  <a href="bookmark2005and6.htm">Previous Years</a>
+  <a href="Quiz.htm">Quiz</a>
+  <a href="Contact.htm">Contact</a>
+</div>
+
+<div class="main"><html>
 <head>
 <title>Adisham Bookmarks</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -15,13 +64,19 @@
   <tr>
     <td>Her Privates We - Frederick Manning</td>
     <td>March</td>
-    <td><img src="media/star1.gif" alt="Star" width="50" height="50"><img src="media/star.gif" width="50" height="50"><img src="media/star.gif" width="50" height="50"><img src="media/star half.gif" width="50" height="50"></td>
+    <td><img src="media/star.jpg" alt="Star" width="50" height="50"><img src="media/star.jpg" width="50" height="50"><img src="media/star.jpg" width="50" height="50"><img src="media/star half.gif" width="50" height="50"></td>
   </tr>
   <tr>
     <td height="23">The Go-Between - LP Hartley</td>
     <td>Feb</td>
-    <td><img src="media/star.gif" width="50" height="50"><img src="media/star.gif" width="50" height="50"><img src="media/star.gif" width="50" height="50"></td>
+    <td><img src="media/star.jpg" width="50" height="50"><img src="media/star.jpg" width="50" height="50"><img src="media/star.jpg" width="50" height="50"></td>
   </tr>
 </table>
+<a href="welcome.htm">
+  <img src="media/home.jpg" alt="home"
+  width="40" height="40"></a>
+  <form>
+ <input type="button" value="Go back!" onclick="history.back()">
+</form>
 </body>
 </html>
